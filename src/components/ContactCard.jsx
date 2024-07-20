@@ -21,14 +21,13 @@ const ContactCard = ({ contact }) => {
 };
 
 ContactCard.propTypes = {
-    contact: PropType.arrayOf(
+    contact: 
         PropType.shape({
             id: PropType.number,
             first_name: PropType.string,
             last_name: PropType.string,
             email: PropType.string
         })
-    )
 }
 
 export default ContactCard;
